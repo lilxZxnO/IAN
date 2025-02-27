@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musée des Confluences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="/" class="logo">
+                    <img src="Images/Musée-des-confluences.jpg"
+                         alt="Accueil - Musée des Confluences" 
+                         class="logo-img">
+                </a>
+            </div>
+
+            <div class="header-right">
+                <div class="top-nav">
+                    <div class="user-nav">
+                        <button type="button" class="nav-button">
+                            Je suis
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="utility-nav">
+                        <ul>
+                            <li><a href="/billetterie" class="active">BILLETTERIE</a></li>
+                            <li><a href="/boutique">BOUTIQUE</a></li>
+                            <li>
+                                <button type="button" class="lang-button">
+                                    FR
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="action-buttons">
+                        <button type="button" aria-label="Rechercher" class="icon-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                        <button type="button" aria-label="Favoris" class="icon-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <button type="button" aria-label="Panier" class="icon-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <nav class="main-nav" aria-label="Navigation principale">
+                    <ul>
+                        <li><a href="/10-ans">10 ans</a></li>
+                        <li><a href="/expositions">Expositions</a></li>
+                        <li><a href="/le-musee">Le musée</a></li>
+                        <li><a href="/preparer-ma-visite">Préparer ma visite</a></li>
+                        <li><a href="/programme">Programme</a></li>
+                        <li><a href="/ressources">Ressources</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Fil d'ariane">
+        <ol>
+            <li><a href="/">Accueil</a></li>
+            <li aria-hidden="true">/</li>
+            <li><a href="/contact" aria-current="page">Contact</a></li>
+        </ol>
+    </nav>
+
+    <main id="main-content" class="main-content">
+        <h1>
+            <a href="/contact" tabindex="0">Contact</a>
+        </h1>
+        <div class="contact-grid">
+            <section aria-labelledby="address-title" tabindex="0">
+                <h2 id="address-title">Adresse</h2>
+                <address>
+                    <p>Musée des Confluences</p>
+                    <p>86 quai Perrache</p>
+                    <p>69002 Lyon</p>
+                </address>
+            </section>
+    
+            <section aria-labelledby="hours-title" tabindex="0">
+                <h2 id="hours-title">Horaires</h2>
+                <p>Du mardi au dimanche de 10h à 17h</p>
+                <p>Nocturne jusqu'à 22h le 1er jeudi du mois</p>
+            </section>
+        </div>
+
+        <section aria-labelledby="contact-form-title" class="contact-form-section">
+            <h2 id="contact-form-title">Formulaire de contact</h2>
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">
+                            Prénom <span aria-label="requis" class="required">*</span>
+                        </label>
+                        <input type="text" 
+                               id="firstName" 
+                               name="firstName" 
+                               required>
+                        <span class="error-message" id="firstNameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">
+                            Nom <span aria-label="requis" class="required">*</span>
+                        </label>
+                        <input type="text" 
+                               id="lastName" 
+                               name="lastName" 
+                               required>
+                        <span class="error-message" id="lastNameError"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">
+                        E-mail <span aria-label="requis" class="required">*</span>
+                    </label>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" 
+                           id="phone" 
+                           name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">
+                        Service <span aria-label="requis" class="required">*</span>
+                    </label>
+                    <select id="service" 
+                            name="service" 
+                            required>
+                        <option value="">- Sélectionner -</option>
+                        <option value="information">Information</option>
+                        <option value="reservation">Réservation</option>
+                        <option value="reclamation">Réclamation</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                    <span class="error-message" id="serviceError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">
+                        Message <span aria-label="requis" class="required">*</span>
+                    </label>
+                    <textarea id="message" 
+                              name="message" 
+                              rows="6" 
+                              required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                    <p class="help-text">
+                        Afin de vous répondre au mieux, merci de préciser au maximum votre demande.
+                    </p>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" 
+                           id="acceptTerms" 
+                           name="acceptTerms" 
+                           required>
+                    <label for="acceptTerms">
+                        J'accepte les conditions générales d'utilisation et la politique de protection des données personnelles
+                    </label>
+                    <span class="error-message" id="acceptTermsError"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-button">
+                        Envoyer
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="https://www.museedesconfluences.fr/sites/default/files/logo-musee-confluences-blanc.svg" 
+                         alt="Musée des Confluences" 
+                         class="footer-logo">
+                    <p>Arrêt "musée des Confluences"</p>
+                    <p>Parking musée des Confluences-Gerland</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Navigation du pied de page">
+                    <h2>Liens rapides</h2>
+                    <ul>
+                        <li><a href="/agenda">Agenda</a></li>
+                        <li><a href="/expositions">Expositions</a></li>
+                        <li><a href="/visites">Préparer ma visite</a></li>
+                        <li><a href="/ressources">Ressources</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-nav" aria-label="Liens utiles">
+                    <h2>Informations</h2>
+                    <ul>
+                        <li><a href="/presse">Espace presse</a></li>
+                        <li><a href="/entreprise">Entreprise</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-newsletter">
+                    <h2>Newsletter</h2>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <label for="newsletter-email" class="sr-only">
+                                Adresse email
+                            </label>
+                            <input type="email" 
+                                   id="newsletter-email" 
+                                   name="newsletter-email" 
+                                   placeholder="Votre email" 
+                                   required>
+                        </div>
+                        <button type="submit" class="newsletter-button">
+                            Je m'abonne
+                        </button>
+                    </form>
+
+                    <div class="social-links">
+                        <h2>Suivez-nous</h2>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="YouTube">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <ul class="legal-links">
+                    <li><a href="/mentions-legales">Mentions légales</a></li>
+                    <li><a href="/cgv">C.G.V.</a></li>
+                    <li><a href="/marches-publics">Marchés publics</a></li>
+                    <li><a href="/credits">Crédits</a></li>
+                    <li><a href="/cookies">Personnalisation des cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
