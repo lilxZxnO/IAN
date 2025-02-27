@@ -19,49 +19,51 @@
     <body>
         <header>
             <div class="navbar">
-                <img class="logo-navbar" src="./asset/logo-10ans.svg" alt="" />
+                <img class="logo-navbar" src="./asset/logo-10ans.svg" alt="Logo du musée célébrant 10 ans" />
                 <div class="info-navbar">
                     <div class="info-navbar-top">
-                        <a class="info-navbar-p" href="">Billetterie</a>
-                        <a class="info-navbar-p" href="">Boutique </a>
-                        <a class="info-navbar-p" href="">FR / EN</a>
-                        <a class="info-navbar-p" href="">Recherche</a>
-                        <a class="info-navbar-p" href="">Panier</a>
+                        <a class="info-navbar-p" href="" title="Accéder à la billetterie">Billetterie</a>
+                        <a class="info-navbar-p" href="" title="Accéder à la boutique">Boutique</a>
+                        <a class="info-navbar-p" href="" title="Changer la langue du site">FR / EN</a>
+                        <a class="info-navbar-p" href="" title="Effectuer une recherche">Recherche</a>
+                        <a class="info-navbar-p" href="" title="Voir le panier">Panier</a>
                     </div>
                     <div class="info-navbar-bottom">
-                        <a class="info-navbar-p" href="">10 ans</a>
-                        <a class="info-navbar-p" href="">Expositions</a>
-                        <a class="info-navbar-p" href="">Le musée</a>
-                        <a class="info-navbar-p" href="">Préparer ma visite</a>
-                        <a class="info-navbar-p" href="">Programme</a>
-                        <a class="info-navbar-p" href="">Ressources</a>
+                        <a class="info-navbar-p" href="" title="En savoir plus sur les 10 ans du musée">10 ans</a>
+                        <a class="info-navbar-p" href="" title="Découvrir les expositions">Expositions</a>
+                        <a class="info-navbar-p" href="" title="En savoir plus sur le musée">Le musée</a>
+                        <a class="info-navbar-p" href="" title="Préparer votre visite">Préparer ma visite</a>
+                        <a class="info-navbar-p" href="" title="Voir le programme">Programme</a>
+                        <a class="info-navbar-p" href="" title="Accéder aux ressources">Ressources</a>
                     </div>
                 </div>
             </div>
-            <div class="swiper-container">
+            <div class="swiper-container" role="region" aria-label="Slider des expositions">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="asset/img_1.jpg" alt="Image 1" />
+                        <img src="asset/img_1.jpg" alt="Image de l'exposition Bienvenu au musée" />
                         <div class="slide-content">
                             <p class="gros-titre">Bienvenu au musée</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="asset/img_2.jpg" alt="Image 2" />
+                        <img src="asset/img_2.jpg" alt="Image de l'exposition" />
                         <div class="slide-content">
                             <p class="gros-titre">Trop Forts</p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="asset/img_3.jpg" alt="Image 3" />
+                        <img src="asset/img_3.jpg" alt="Image de l'exposition Venez vivres les 10 ans" />
                         <div class="slide-content">
                             <p class="gros-titre">Venez vivres les 10 ans</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination" role="navigation" aria-label="Pagination du slider"></div>
             </div>
+
+            <div class="swiper-pagination" role="navigation" aria-label="Pagination du slider"></div>
+        </div>
         </header>
         <main>
             <div class="container">
@@ -217,170 +219,121 @@
             <div class="container2">
                 <div class="container-4">
                     <p tabindex="0" class="titre">Expositions</p>
-                    <a class="l2" href=""
-                        >Voir tout<svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-chevron-right"
-                        >
-                            <path d="m9 18 6-6-6-6" /></svg
-                    ></a>
+                    <a class="l2" href="" title="Voir toutes les expositions" tabindex="0">
+                        Voir tout
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </a>
                 </div>
                 <div class="container-3">
                     <div class="container-4">
                         <div class="sousG">
-                            <p class="titre">19</p>
-                            <p class="text2">FÉV 2025</p>
+                            <p class="titre" tabindex="0">19</p>
+                            <p class="text2" tabindex="0">FÉV 2025</p>
                             <hr class="h" />
-                            <p class="titre">31</p>
-                            <p class="text2">DÉC 2025</p>
+                            <p class="titre" tabindex="0">31</p>
+                            <p class="text2" tabindex="0">DÉC 2025</p>
                         </div>
                         <div class="sousD">
-                            <img src="./asset/img_4.jpg" alt="" />
+                            <img src="./asset/img_4.jpg" alt="Image de 3 personnes devant une exposition" tabindex="0" />
                             <p tabindex="0" class="text1">Exposition</p>
                             <p tabindex="0" class="sous-titre">Trop fort !</p>
                         </div>
                     </div>
                     <div class="container-4">
                         <div class="sousG">
-                            <p class="titre">18</p>
-                            <p class="text2">OCT 2024</p>
+                            <p class="titre" tabindex="0">18</p>
+                            <p class="text2" tabindex="0">OCT 2024</p>
                             <hr class="h" />
-                            <p class="titre">24</p>
-                            <p class="text2">AOÛ 2025</p>
+                            <p class="titre" tabindex="0">24</p>
+                            <p class="text2" tabindex="0">AOÛ 2025</p>
                         </div>
                         <div class="sousD">
-                            <img src="./asset/img_5.jpg" alt="" />
+                            <img src="./asset/img_5.jpg" alt="Image de l'exposition Le temps d'un rêve" tabindex="0" />
                             <p tabindex="0" class="text1">Expositions</p>
-                            <p tabindex="0" class="sous-titre">
-                                Le temps d'un rêve
-                            </p>
+                            <p tabindex="0" class="sous-titre">Le temps d'un rêve</p>
                         </div>
                     </div>
                     <div class="container-4">
                         <div class="sousG">
-                            <p class="titre">16</p>
-                            <p class="text2">FÉV 2024</p>
+                            <p class="titre" tabindex="0">16</p>
+                            <p class="text2" tabindex="0">FÉV 2024</p>
                             <hr class="h" />
-                            <p class="titre">27</p>
-                            <p class="text2">AVR 2025</p>
+                            <p class="titre" tabindex="0">27</p>
+                            <p class="text2" tabindex="0">AVR 2025</p>
                         </div>
                         <div class="sousD">
-                            <img src="./asset/img_6.jpg" alt="" />
+                            <img src="./asset/img_6.jpg" alt="Image de l'exposition En forêt" tabindex="0"/>
                             <p tabindex="0" class="text1">Expositions</p>
                             <p tabindex="0" class="sous-titre">En forêt</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="exposition-swiper-container">
+            <div class="exposition-swiper-container" role="region" aria-label="Slider des expositions">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="asset/img_7.jpg" alt="Image 7" />
+                        <img src="asset/img_7.jpg" alt="Image représentant le squelette d'un dinosaure" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="asset/img_8.jpg" alt="Image 8" />
+                        <img src="asset/img_8.jpg" alt="Image représentant un pharaon" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="asset/img_9.jpg" alt="Image 9" />
+                        <img src="asset/img_9.jpg" alt="Image représentant plusieurs œuvres" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="asset/img_10.jpg" alt="Image 10" />
+                        <img src="asset/img_10.jpg" alt="Image représentant une personne qui fixe une œuvre" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="asset/img_11.jpg" alt="Image 11" />
+                        <img src="asset/img_11.jpg" alt="Image représentant une œuvre asiatique" />
                     </div>
                 </div>
-                <div class="exposition-swiper-pagination"></div>
+                <div class="exposition-swiper-pagination" role="navigation" aria-label="Pagination du slider"></div>
             </div>
             <div class="container2">
                 <div class="container-4">
                     <p tabindex="0" class="titre">Agenda</p>
-                    <a class="l2" href=""
-                        >Voir tout<svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-chevron-right"
-                        >
-                            <path d="m9 18 6-6-6-6" /></svg
-                    ></a>
+                    <a class="l2" href="" title="Voir tout l'agenda" tabindex="0">
+                        Voir tout
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </a>
                 </div>
                 <div class="container-3">
                     <div class="sousD">
-                        <img src="./asset/img_12.jpg" alt="" />
+                        <img src="./asset/img_12.jpg" alt="Image du spectacle Les yeux de Taqqi" tabindex="0" />
                         <p tabindex="0" class="text1">Spectacle</p>
                         <p tabindex="0" class="sous-titre">Les yeux de Taqqi</p>
-                        <a class="l1" href=""
-                            >Du 25 février 2025 au 26 février 2025<svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-chevron-right"
-                            >
-                                <path d="m9 18 6-6-6-6" /></svg
-                        ></a>
+                        <a class="l1" href="" title="Voir les détails du spectacle Les yeux de Taqqi" tabindex="0">
+                            Du 25 février 2025 au 26 février 2025
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
+                        </a>
                     </div>
                     <div class="sousD">
-                        <img src="./asset/img_13.jpg" alt="" />
+                        <img src="./asset/img_13.jpg" alt="Image du spectacle Live Dream" tabindex="0"/>
                         <p tabindex="0" class="text1">Spectacle, 10ans</p>
                         <p tabindex="0" class="sous-titre">Live Dream</p>
-                        <a class="l1" href=""
-                            >Du 03 mars 2025 au 09 mars 2025<svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-chevron-right"
-                            >
-                                <path d="m9 18 6-6-6-6" /></svg
-                        ></a>
+                        <a class="l1" href="" title="Voir les détails du spectacle Live Dream" tabindex="0">
+                            Du 03 mars 2025 au 09 mars 2025
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
+                        </a>
                     </div>
                     <div class="sousD">
-                        <img src="./asset/img_12.jpg" alt="" />
+                        <img src="./asset/img_12.jpg" alt="Image de la visite Le musée à petites mains - 2025" tabindex="0" />
                         <p tabindex="0" class="text1">Visite</p>
-                        <p tabindex="0" class="sous-titre">
-                            Le musée à petites mains - 2025
-                        </p>
-                        <a class="l1" href=""
-                            >Du 04 janvier 2025 au 05 juillet 2025<svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-chevron-right"
-                            >
-                                <path d="m9 18 6-6-6-6" /></svg
-                        ></a>
+                        <p tabindex="0" class="sous-titre">Le musée à petites mains - 2025</p>
+                        <a class="l1" href="" title="Voir les détails de la visite Le musée à petites mains - 2025" tabindex="0">
+                            Du 04 janvier 2025 au 05 juillet 2025
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -406,7 +359,7 @@
                 </div>
                 <div class="container-3">
                     <div class="sousD">
-                        <img src="./asset/img_15.jpg" alt="" />
+                        <img src="./asset/img_15.jpg" alt="Image d'une exposition d'egypte" tabindex="0"/>
                         <p tabindex="0" class="text1">Programmation</p>
                         <p tabindex="0" class="sous-titre">
                             Autour de l'exposition " Trop fort ! "
@@ -428,7 +381,7 @@
                         ></a>
                     </div>
                     <div class="sousD">
-                        <img src="./asset/img_16.jpg" alt="" />
+                        <img src="./asset/img_16.jpg" alt="Image d'une demonstration devant des enfants" tabindex="0"/>
                         <p tabindex="0" class="text1">Programmation</p>
                         <p tabindex="0" class="sous-titre">
                             En famille pour les vacances d'hiver !
@@ -450,7 +403,7 @@
                         ></a>
                     </div>
                     <div class="sousD">
-                        <img src="./asset/img_17.jpg" alt="" />
+                        <img src="./asset/img_17.jpg" alt="Image d'une Exposition" tabindex="0"/>
                         <p tabindex="0" class="text1">Programmation</p>
                         <p tabindex="0" class="sous-titre">
                             En février au musée
@@ -501,13 +454,13 @@
         <footer>
             <div class="footer-top">
                 <div class="footer-container">
-                    <img class="logo" src="./asset/logo-10ans.svg" alt="" />
-                    <p class="text">
+                    <img class="logo" src="./asset/logo-10ans.svg" alt="Logo du Musée des Confluences" tabindex="0" />
+                    <p class="text" tabindex="0">
                         Arrêt "musée des Confluences" <br />
                         Parking musée des Confluences-Gerland
                     </p>
-                    <p class="Horaires">Horaires</p>
-                    <p class="text">
+                    <p class="Horaires" tabindex="0">Horaires</p>
+                    <p class="text" tabindex="0">
                         Du lundi au dimanche de 10h30 à 18h30 (pendant les
                         vacances de la zone A) <br />
                         Nocturne jusqu'à 22h le 1er jeudi du mois
@@ -556,7 +509,7 @@
                     </ul>
                 </div>
                 <div class="footer-container">
-                    <p class="Newsletter">Newsletter</p>
+                    <p class="Newsletter" tabindex="0">Newsletter</p>
                     <a href="" class="footer-lien"
                         >informations pratiques<svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -575,6 +528,8 @@
                     <div class="res2">
                         <svg
                             class="res"
+                            aria-label="Instagram"
+                            tabindex="0"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
@@ -601,6 +556,8 @@
                         </svg>
                         <svg
                             class="res"
+                            aria-label="Facebook"
+                            tabindex="0"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
@@ -618,6 +575,8 @@
                         </svg>
                         <svg
                             class="res"
+                            aria-label="LinkedIn"
+                            tabindex="0"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
@@ -637,6 +596,8 @@
                         </svg>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
+                            aria-label="Youtube"
+                            tabindex="0"
                             width="24"
                             height="24"
                             viewBox="0 0 24 24"
@@ -667,8 +628,8 @@
                     >
                 </div>
                 <div>
-                    <img class="logo" src="./asset/logo-m.svg" alt="" />
-                    <img class="logo" src="./asset/logo-metro.png" alt="" />
+                    <img class="logo" src="./asset/logo-m.svg" alt="Logo du Musée" tabindex="0" />
+                    <img class="logo" src="./asset/logo-metro.png" alt="Logo de la metropole de Lyon" tabindex="0" />
                 </div>
             </div>
         </footer>
