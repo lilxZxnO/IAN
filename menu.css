@@ -277,7 +277,89 @@ hr {
     opacity: 1;
     background-color: white;
 }
+
+
+/* Tableau: */
+
+#table-confluences {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1em;
+}
+
+#table-confluences caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.table-header {
+    background-color: #004080;
+    color: white;
+    text-align: left;
+}
+
+.table-header th {
+    padding: 1em;
+    border: 2px solid #ccc;
+}
+
+.table-row {
+    border: 2px solid #ccc;
+}
+
+.table-row th, 
+.table-row td {
+    padding: 1em;
+    border: 2px solid #ccc;
+    text-align: left;
+}
+
+.table-row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Navigation au clavier */
+.table-header th:focus, 
+.table-row td:focus, 
+.table-row th:focus, 
+.table-link:focus {
+    outline: 3px solid #ff6600;
+    background-color: #e0e0e0;
+}
+
+/* Effet au survol */
+.table-row:hover {
+    background-color: #e0e0e0;
+}
+
+/* Accessibilité des liens */
+.table-link {
+    color: #004080;
+    text-decoration: underline;
+}
+
+.table-link:focus {
+    outline: 3px solid #ff6600;
+    background-color: #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #table-confluences {
+        font-size: 0.9em;
+    }
+}
+
+
+
+
 /* ---------- FIN MAIN ---------- */
+
+
+
+
 
 /* ---------- DEBUT FOOTER ---------- */
 
