@@ -70,7 +70,7 @@
                         <li><a href="/le-musee">Le musée</a></li>
                         <li><a href="/preparer-ma-visite">Préparer ma visite</a></li>
                         <li><a href="/programme">Programme</a></li>
-                        <li><a href="/ressources">Ressources</a></li>
+                        <li><a href="/index.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -152,18 +152,21 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="service">
+                    <label for="service" id="service-label">
                         Service <span aria-label="requis" class="required">*</span>
                     </label>
                     <select id="service" 
                             name="service" 
-                            required>
+                            required
+                            aria-labelledby="service-label"
+                            aria-describedby="service-description">
                         <option value="">- Sélectionner -</option>
                         <option value="information">Information</option>
                         <option value="reservation">Réservation</option>
                         <option value="reclamation">Réclamation</option>
                         <option value="autre">Autre</option>
                     </select>
+                    <p id="service-description" class="sr-only">Liste des services disponibles</p>
                     <span class="error-message" id="serviceError"></span>
                 </div>
 
