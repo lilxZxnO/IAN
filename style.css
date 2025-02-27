@@ -237,6 +237,8 @@ textarea:focus {
 
 .error-message.visible {
     display: block;
+    margin-top: 0.25rem;
+    font-weight: bold;
 }
 
 .help-text {
